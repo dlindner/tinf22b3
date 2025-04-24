@@ -10,10 +10,18 @@ public class Berechnung {
 		return num1 * num2;
 	}
 	
+	/**
+	 * Multiplicates
+	 * 
+	 * @param num1
+	 * @param num2
+	 * @return
+	 */
 	public int original_für(int num1, int num2) {
 		int result = 0;
 		int ithBit;
 
+		// this expression tries to evaluate the leading sign (+ or -)
 		boolean isNegativeSign = (num1 < 0 && num2 > 0) || (num1 > 0 && num2 < 0);
 		num1 = Math.abs(num1);
 		num2 = Math.abs(num2);
